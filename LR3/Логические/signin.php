@@ -35,7 +35,7 @@ if ($_POST){
             ]);
 
             $ids = $users->fetchColumn();
-            if($ids){
+            if($ids < 1){
                 $arrayerrors['errpass'] = 'Неверный логин или пароль ';
             }
             else {
